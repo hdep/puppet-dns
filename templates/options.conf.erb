@@ -1,3 +1,4 @@
+// FILE MANAGED BY PUPPET
 directory "<%= scope.lookupvar('::dns::vardir') %>";
 <% unless scope.lookupvar('::dns::forwarders').empty? -%>
 forwarders { <%= scope.lookupvar('::dns::forwarders').join("; ") %>; };
